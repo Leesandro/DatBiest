@@ -29,20 +29,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 
 
 
-const Route: Routes = [
-  {path: "", pathMatch:'full',redirectTo:'home'},
-  {path: "home", component: HomeComponent},
-  {path: "login", component: LogInComponent},
-  {path: "reservations", component: ReservationsComponent},
-  {path: "signin", component: SignInComponent},
-  {path: "restaurantsignin", component: RestaurantSignInComponent},
-  {path: "changereservation", component: ChangeReservationComponent},
-  {path: "changeuser", component: ChangeUserDataComponent},
-  {path: "changerestaurant", component: ChangeRestaurantDataComponent},
-  {path: "makereservation", component: MakeReservationComponent},
-  {path: "searchlist", component: SearchListComponent},
-  {path: "searchbar", component: SearchbarComponent}
-];
+
 
 
 @NgModule({
@@ -68,7 +55,7 @@ const Route: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(Route),
+    
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
