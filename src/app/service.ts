@@ -47,6 +47,7 @@ restaurantname='';
 
  GetName(name:any){
     this.restaurantname = name;
+    console.log(this.restaurantname)
  }
 
     ChangeMessage(){

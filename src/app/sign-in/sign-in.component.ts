@@ -6,7 +6,7 @@ import { FormControl,FormsModule, FormGroup, ReactiveFormsModule, Validators} fr
 @Component({
   selector: 'an-sign-in',
   templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.css','./nicepage.css','./SignIn.css']
+  styleUrls: ['./sign-in.component.css','./nicepage.css']
 })
 export class SignInComponent implements OnInit {
 

@@ -25,8 +25,10 @@
     <meta property="og:type" content="website">
     
   </head>
-  <body   class="u-body u-xl-mode" data-lang="en"><header class=" u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-section-row-container" id="sec-63f8" ><div class="u-section-rows">
-        <div class="u-clearfix u-palette-4-light-1 u-section-row u-section-row-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="" id="sec-5019">
+  <body   class="u-body u-xl-mode" data-lang="en">
+    <header class=" u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-clearfix u-header u-section-row-container" id="sec-63f8" >
+      <div class="u-section-rows">
+        <div class="u-clearfix u-palette-4-light-1 u-section-row u-section-row-1" id="sec-5019">
           <div class="u-clearfix u-sheet u-sheet-1">
             <a routerLink="home" class="u-image u-logo u-image-1" data-image-width="400" data-image-height="265" title="Home">
               <img src="src/assets/image/LOGO.png" class="u-logo-image u-logo-image-1">
@@ -36,7 +38,7 @@
 
  <!--navButtons-->
 
-            <nav class="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1" data-responsive-from="MD">
+            <nav class="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1 navbar navbar-expand-md navbar" data-responsive-from="MD">
               <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
                 <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-color u-custom-custom-border-radius u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#" style="padding: 1px 0px; font-size: calc(1em + 2px);">
                   <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9c33"></use></svg>
@@ -44,14 +46,17 @@
 </g></svg>
                 </a>
               </div>
-              <div class="u-custom-menu u-nav-container">
-                <ul class="u-nav u-spacing-15 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-dark-1 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-button-style u-nav-link u-radius-50 u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base"  style="padding: 12px 40px;">Home</a>
+              <div class="u-custom-menu u-nav-container navbar-toggle" >
+                <ul class="u-nav u-spacing-15 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-dark-1 
+                  u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-button-style u-nav-link u-radius-50 u-text-active-palette-1-base u-text-grey-90 
+                  u-text-hover-palette-1-base"  style="padding: 12px 40px;">Home</a>
                 <div class="u-nav-popup"><ul class="u-border-2 u-border-palette-1-dark-1 u-h-spacing-15 u-nav u-unstyled u-v-spacing-17 u-nav-2">
                   <li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-1" routerLink="home">Home</a>
 </li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-1" routerLink="reservations">Reservierungen</a>
 </li></ul>
 </div>
-</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-dark-1 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 u-button-style u-nav-link u-radius-50 u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base" style="padding: 12px 40px;">Profil</a>
+</li><li class="u-nav-item"><a class="u-border-2 u-border-active-palette-1-dark-1 u-border-hover-palette-1-dark-1 u-border-palette-1-dark-1 
+  u-button-style u-nav-link u-radius-50 u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-1-base" style="padding: 12px 40px;">Profil</a>
   <div class="u-nav-popup"><ul class="u-border-2 u-border-palette-1-dark-1 u-h-spacing-15 u-nav u-unstyled u-v-spacing-17 u-nav-3">
     <li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-1" routerLink="login">Log-In</a>
 </li><li class="u-nav-item"><a class="u-active-palette-1-light-2 u-button-style u-hover-palette-1-light-3 u-nav-link u-palette-1-light-1" routerLink="signin">Sign-In</a>
@@ -60,6 +65,7 @@
 </div>
 </li></ul>
               </div>
+              
               <div class="u-custom-menu u-nav-container-collapse">
                 <div class="u-border-2 u-border-grey-60 u-container-style u-inner-container-layout u-opacity u-opacity-95 u-palette-1-dark-1 u-sidenav">
                   <div class="u-inner-container-layout u-sidenav-overflow">
@@ -94,6 +100,6 @@
         
       </div></header>
       <an-searchbar></an-searchbar>
-      <router-outlet></router-outlet>
+      
      
 </body></html>

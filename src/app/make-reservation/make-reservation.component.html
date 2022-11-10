@@ -30,7 +30,7 @@
         <div class="u-align-center u-container-style u-expanded-width-xs u-group u-radius-50 u-shape-round u-white u-group-1">
           <div class="u-container-layout u-valign-middle u-container-layout-1">
             <h4 class="u-custom-font u-font-montserrat u-text u-text-default-lg u-text-default-xl u-text-1"> Restaurant:
-                <br>{{restaurantname}}
+                <br *ngFor="let p for GetName()">{{restaurantname}}
             </h4>
             <h6 class="u-custom-font u-font-montserrat u-text u-text-2"> Email us with any questions or inquiries or use our contact data.</h6>
             <div class="u-form u-form-1">
@@ -88,7 +88,7 @@
       </div>
     </section>
     
-    <router-outlet></router-outlet>
+   
     
   
 </body></html>

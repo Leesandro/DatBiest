@@ -42,7 +42,7 @@
                 <div class="u-form-email u-form-group u-form-partition-factor-2">
                   
                   <label for="firstname" class="u-label">Vorname</label>
-                  <input #firstnamebox name="firstname" formControlName="firstname" type="text" class="form-control" [(ngModel)]="firstname"
+                  <input #firstnamebox  formControlName="firstname" type="text" class="form-control" [(ngModel)]="firstname"
                          class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-6 u-white" required="">
                   <ng-container *ngIf="RegisterForm.controls['firstname'].dirty || RegisterForm.controls['firstname'].touched">
                           <p class="error" *ngIf="RegisterForm.controls['firstname'].errors?.['required']"> Du musst doch einen Vornamen haben?</p>
@@ -52,7 +52,7 @@
                 <div class="u-form-group u-form-name u-form-partition-factor-2">
                   
                   <label for="lastname" class="u-label">Nachname</label>
-                  <input #lastnamebox name="lastname"  formControlName="lastname" type="text" class="form-control" [(ngModel)]="lastname" 
+                  <input #lastnamebox   formControlName="lastname" type="text" class="form-control" [(ngModel)]="lastname" 
                          class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-6 u-white" required="">
                   <ng-container *ngIf="RegisterForm.controls['lastname'].dirty || RegisterForm.controls['lastname'].touched">
                           <p class="error" *ngIf="RegisterForm.controls['lastname'].errors?.['required']"> Du musst doch einen Nachnamen haben?</p>
@@ -62,7 +62,7 @@
                 <div class="u-form-group u-form-partition-factor-2 u-form-phone u-form-group-3">
                   
                   <label for="phonenumber" class="u-label">Telefonnummer</label>
-                  <input #phonenumberbox name="phonenumber" formControlName="phonenumber" type="text" class="form-control" [(ngModel)]="phonenumber" 
+                  <input #phonenumberbox  formControlName="phonenumber" type="text" class="form-control" [(ngModel)]="phonenumber" 
                          class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-6 u-white" required="">
                   <ng-container *ngIf="RegisterForm.controls['phonenumber'].dirty || RegisterForm.controls['phonenumber'].touched">
                           <p class="error" *ngIf="RegisterForm.controls['phonenumber'].errors?.['phonenumber']">Jeder hat ein Handy</p>
@@ -76,7 +76,7 @@
                 <div class="u-form-address u-form-group u-form-partition-factor-2 u-form-group-4">
                   
                   <label for="email" class="u-label">Email</label>
-                  <input #emailbox name="email" formControlName="email" type="text" class="form-control" [(ngModel)]="email" 
+                  <input #emailbox  formControlName="email" type="text" class="form-control" [(ngModel)]="email" 
                         class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-6 u-white" required="">
                   <ng-container *ngIf="RegisterForm.controls['email'].dirty || RegisterForm.controls['email'].touched">
                           <p class="error" *ngIf="RegisterForm.controls['email'].errors?.['required']">Trag deine Email ein</p>
@@ -91,7 +91,7 @@
                 <div class="u-form-group u-form-group-5">
                   
                   <label for="password" class="u-label">Passwort</label>
-                  <input #passwordbox name="password" formControlName="password" type="password" class="form-control" [(ngModel)]="password"
+                  <input #passwordbox  formControlName="password" type="password" class="form-control" [(ngModel)]="password"
                           class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-radius-6 u-white">
                   <ng-container *ngIf="RegisterForm.controls['password'].dirty || RegisterForm.controls['password'].touched">
                     <p class="error" *ngIf="RegisterForm.controls['password'].errors?.['required']"> Du brauchst ein Passwort</p>

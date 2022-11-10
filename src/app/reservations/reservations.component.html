@@ -27,35 +27,37 @@
       <div class="u-clearfix u-sheet u-valign-top u-sheet-1">
         <img class="u-image u-image-round u-radius-10 u-image-1" src="images/ground-classic-italian-pizza-with-tomatoes-pepper-vegetables-sauce-mozarella-cheese-dark-kitchen-table-copy-space_90380-947.jpg" alt="" data-image-width="626" data-image-height="417">
         <div class="u-table u-table-responsive u-table-1">
-          <table class="u-table-entity">
+          <table class="u-table-entity .table-responsive">
             <colgroup>
-              <col width="33.3%">
-              <col width="33.3%">
-              <col width="33.4%">
+              <col width="25%">
+              <col width="25%">
+              <col width="25%">
+              <col width="25%">
             </colgroup>
             <thead class="u-table-header">
               <tr style="height: 46px;">
                 <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Restaurantname</th>
                 <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Sitzplatz</th>
+                <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Datum</th>
                 <th class="u-border-1 u-border-grey-dark-1 u-table-cell">Uhrzeit</th>
               </tr>
             </thead>
-            <tbody class="u-table-body">
+            <div *ngFor=" let reservation of reservation.reservation">
+            <tbody   class="u-table-body">
               <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">{{reservation.reservations.rName}}</td>
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">{{reservation.reservations.rSeats}}</td>
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">{{reservation.reservations.date}}</td>
+                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">{{reservation.reservations.time}}</td>
               </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell"></td>
-              </tr>
+            
             </tbody>
+          </div>
           </table>
         </div>
       </div>
     </section>
+    
     
     
 

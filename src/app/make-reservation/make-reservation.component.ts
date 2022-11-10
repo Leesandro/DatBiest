@@ -6,7 +6,7 @@ import { AppComponent } from '../app.component';
 @Component({
   selector: 'an-make-reservation',
   templateUrl: './make-reservation.component.html',
-  styleUrls: ['./make-reservation.component.css', './Makereservation.css', './nicepage.css']
+  styleUrls: ['./make-reservation.component.css', './nicepage.css']
 })
 export class MakeReservationComponent implements OnInit {
 
@@ -23,8 +23,9 @@ export class MakeReservationComponent implements OnInit {
    
     restaurantname ='';
     
-    GetName(){
+    GetName(restaurantname: any){
       this.restaurantname =  this.service.ChangeMessage();
+      
     }
     
       

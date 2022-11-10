@@ -24,7 +24,7 @@ import { NavbarUserComponent } from './navbar-user/navbar-user.component';
 import { NavbarRestaurantComponent } from './navbar-restaurant/navbar-restaurant.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
-import { ContainerComponent } from './container/container.component';
+
 
 
 
@@ -63,7 +63,7 @@ const Route: Routes = [
     NavbarRestaurantComponent,
     FooterComponent,
     SearchbarComponent,
-    ContainerComponent,
+    
 
   ],
   imports: [

@@ -7,7 +7,7 @@ import { Service } from '../service';
 @Component({
   selector: 'an-search-list',
   templateUrl: './search-list.component.html',
-  styleUrls: ['./search-list.component.css','./nicepage.css','./Search.css']
+  styleUrls: ['./search-list.component.css','./nicepage.css']
 })
 export class SearchListComponent implements OnInit {
 
